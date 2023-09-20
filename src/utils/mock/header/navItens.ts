@@ -1,22 +1,22 @@
 export const NavItensLinks = [
   {
-    href: '/clube',
+    href: '#',
     label: 'Clube',
   },
   {
-    href: '/loja',
+    href: '#',
     label: 'Loja',
   },
   {
-    href: '/produtores',
+    href: '#',
     label: 'Produtores',
   },
   {
-    href: '/ofertas',
+    href: '#',
     label: 'Ofertas',
   },
   {
-    href: '/eventos',
+    href: '#',
     label: 'Eventos',
   },
 ]
