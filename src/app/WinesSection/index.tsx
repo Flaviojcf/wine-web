@@ -9,7 +9,7 @@ interface RangeValue {
   max: number
 }
 
-export function Wines() {
+export function WinesSection() {
   const [value, setValue] = useState<RangeValue>()
 
   function handleFilterWine(value: string) {
