@@ -1,9 +1,9 @@
-import { Wines } from './WinesSection'
+import { WinesSection } from './WinesSection'
 
 export default function Home() {
   return (
     <>
-      <Wines />
+      <WinesSection />
     </>
   )
 }
