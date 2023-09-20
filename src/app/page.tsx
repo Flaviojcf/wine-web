@@ -1,5 +1,9 @@
-import { Header } from './components/Header'
+import { Wines } from './WinesSection'
 
 export default function Home() {
-  return <></>
+  return (
+    <>
+      <Wines />
+    </>
+  )
 }
