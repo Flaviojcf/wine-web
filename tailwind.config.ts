@@ -31,6 +31,15 @@ const config: Config = {
       },
       textColor: {
         navHoverColor: '#d14b8f',
+        spanNotPartner: '#888888',
+        pricePartner: '#B6116E',
+      },
+      borderColor: {
+        navBorderBottom: '#D14B8F',
+      },
+      colors: {
+        buttonColor: '#7EBC43',
+        bgOff: '#F79552',
       },
     },
   },
