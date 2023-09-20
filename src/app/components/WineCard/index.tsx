@@ -19,7 +19,7 @@ export function WineCard({ image, name, offer, partnerOffer, price }: IWine) {
           <Link href="/wine/syrah">
             <Image
               src={image}
-              alt="Castelão Syrah"
+              alt={name}
               width={200}
               height={178}
               unoptimized

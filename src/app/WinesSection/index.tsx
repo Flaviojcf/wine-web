@@ -28,7 +28,9 @@ export function WinesSection() {
         <Filter handleFilterWine={handleFilterWine} />
       </div>
       <div className="flex flex-col gap-6 w-1/2 sm:justify-center sm:w-full sm:text-center">
-        <h1 className="text-lg font-bold text-black">9 produtos encontrados</h1>
+        <h1 className="text-lg font-bold text-black">
+          {WinesData.length} produtos encontrados
+        </h1>
         <div className="flex flex-wrap gap-8 sm:justify-center">
           {WinesData.filter((wineCard) => {
             if (value !== null && typeof value !== 'undefined') {
