@@ -15,7 +15,7 @@ export function Header() {
           <Link href="/">
             <Image
               alt="Wine logo"
-              src="/images/wineLogo.png"
+              src="/images/header/wineLogo.png"
               width={101}
               height={31}
             />
