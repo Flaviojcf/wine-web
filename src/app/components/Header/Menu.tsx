@@ -15,7 +15,7 @@ export function Menu() {
       <DropdownMenu.Trigger className="hidden sm:flex">
         <div>
           <Image
-            src="/images/header/menuWine.png"
+            src="/images/header/menuWine.svg"
             alt="Dropdown Menu"
             width={21}
             height={16}
