@@ -4,7 +4,7 @@ import { NavItem } from './NavItem'
 import Link from 'next/link'
 import { NavItensLinks } from '@/utils/mock/header/navItens'
 import { NavImages } from '@/utils/mock/header/navImages'
-import { Menu } from './DropdownMenu'
+import { Menu } from './Menu'
 
 export function Header() {
   return (

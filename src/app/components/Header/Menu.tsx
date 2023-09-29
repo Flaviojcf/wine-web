@@ -14,7 +14,7 @@ export function Menu() {
       <DropdownMenu.Trigger className="hidden sm:flex">
         <div>
           <Image
-            src="/images/menuWine.png"
+            src="/images/header/menuWine.png"
             alt="Dropdown Menu"
             width={21}
             height={16}
@@ -26,7 +26,7 @@ export function Menu() {
           <DropdownMenu.Content className="h-screen -mt-10" asChild forceMount>
             <motion.ul
               className="flex flex-col px-8 py-4 pt-16 
-              rounded-md gap-4 text-black w-[280px] h-full bg-white z-999"
+              rounded-md gap-4 text-black w-[290px] h-full bg-white z-50 drop-shadow-2xl"
               initial={{ x: -200 }}
               animate={{ x: 0 }}
               exit={{ x: -300 }}

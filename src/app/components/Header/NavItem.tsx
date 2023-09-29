@@ -1,9 +1,5 @@
+import { INavItem } from '@/app/interfaces/INavItem'
 import Link from 'next/link'
-
-interface INavItem {
-  label: string
-  href: string
-}
 
 export function NavItem({ href, label }: INavItem) {
   return (
