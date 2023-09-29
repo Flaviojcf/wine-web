@@ -1,10 +1,10 @@
 export const NavImages = [
-  {
-    width: 38,
-    height: 38,
-    src: '/images/header/wineSearch.png',
-    alt: 'Wine search image',
-  },
+  // {
+  //   width: 38,
+  //   height: 38,
+  //   src: '/images/header/wineSearch.png',
+  //   alt: 'Wine search image',
+  // },
   {
     width: 38,
     height: 38,

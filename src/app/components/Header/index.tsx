@@ -32,7 +32,7 @@ export function Header() {
           ))}
         </nav>
 
-        <nav className="flex items-center justify-between w-64 sm:justify-end sm:gap-6 sm:w-28">
+        <nav className="flex items-center justify-between w-32 sm:justify-end sm:gap-6 sm:w-28">
           {NavImages.map((item) => (
             <Image
               key={`image-${item.alt}`}
@@ -40,9 +40,7 @@ export function Header() {
               src={item.src}
               width={item.width}
               height={item.height}
-              className={`cursor-pointer ${
-                item.alt === 'Wine account image' ? 'sm:hidden' : ''
-              }`}
+              className={`cursor-pointer`}
             />
           ))}
         </nav>
