@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { NavItem } from './NavItem'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useState } from 'react'
+import { NavImages } from '@/utils/mock/header/navImages'
 
 export function Menu() {
   const [isOpen, setOpen] = useState<boolean>(false)
@@ -32,6 +33,18 @@ export function Menu() {
               exit={{ x: -300 }}
               transition={{ duration: 0.3 }}
             >
+              <nav className="flex items-center justify-between w-32 -mt-10 sm:gap-4 sm:w-28">
+                {NavImages.map((item) => (
+                  <Image
+                    key={`image-${item.alt}`}
+                    alt={item.alt}
+                    src={item.src}
+                    width={item.width}
+                    height={item.height}
+                    className={`cursor-pointer`}
+                  />
+                ))}
+              </nav>
               <div
                 className="w-6 h-6 relative cursor-pointer -mt-8 ml-auto"
                 onClick={() => setOpen(false)}

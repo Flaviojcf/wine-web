@@ -6,7 +6,7 @@ export function Button({ children, className, ...props }: IButton) {
       {...props}
       className={
         className ||
-        'flex items-center justify-center w-64 h-10 rounded bg-buttonColor hover:opacity-80 transition-all text-white'
+        'flex items-center justify-center w-64 h-10 rounded bg-buttonColor hover:opacity-80 transition-all font-bold text-white dark:bg-emerald-700'
       }
     >
       {children}

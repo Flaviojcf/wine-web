@@ -33,7 +33,7 @@ export function BacktoTopButton() {
           <Button
             onClick={scrollToTop}
             className="bg-buttonColor py-3 px-4 rounded-lg text-gray-50 flex 
-            items-center justify-center gap-2 hover:opacity-80 transition-all disabled:opacity-50"
+            items-center justify-center gap-2 hover:opacity-80 transition-all disabled:opacity-50 dark:bg-emerald-700"
           >
             <TbArrowNarrowUp size={20} />
           </Button>

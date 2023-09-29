@@ -22,11 +22,13 @@ export function Filter({ handleFilterWine }: IFilter) {
   return (
     <div className="text-black">
       <div>
-        <p className="font-bold text-xl mb-8">Refine sua busca</p>
+        <p className="font-bold text-xl mb-8 dark:text-white">
+          Refine sua busca
+        </p>
       </div>
       <div>
-        <p className="mb-4 font-bold text-lg">Por preço</p>
-        <ul className="flex flex-col gap-4">
+        <p className="mb-4 font-bold text-lg dark:text-white">Por preço</p>
+        <ul className="flex flex-col gap-4 dark:text-gray-400">
           <li className="flex gap-4">
             <input
               type="radio"

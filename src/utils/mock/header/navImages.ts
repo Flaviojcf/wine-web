@@ -8,7 +8,7 @@ export const NavImages = [
   {
     width: 38,
     height: 38,
-    src: '/images/header/wineAccount.png',
+    src: '/images/header/wineAccount.svg',
     alt: 'Wine account image',
   },
   {
