@@ -5,4 +5,5 @@ export interface IWineDetails {
   offer: number
   partnerOffer: number
   description: string
+  starts: number
 }
