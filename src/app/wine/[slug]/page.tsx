@@ -1,22 +1,10 @@
-import { IWineDetails } from '@/app/interfaces/IWineDetails'
 import Image from 'next/image'
 import Link from 'next/link'
 import { TbArrowNarrowLeft } from 'react-icons/tb'
 import { BsStarFill } from 'react-icons/bs'
 import { FormattedMoney } from '@/utils/helpers/formattedMoney'
 
-function WineDetailsButton() {
-  return <div>a</div>
-}
-
-export default function WineDetails({
-  description,
-  offer,
-  partnerOffer,
-  price,
-  subtitle,
-  title,
-}: IWineDetails) {
+export default function WineDetails() {
   return (
     <div className="flex flex-col w-screen pt-9 px-64 gap-6 lg:px-4 mb-14">
       <div className="text-black font-bold text-base  w-fit group">
