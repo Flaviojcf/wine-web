@@ -12,9 +12,13 @@ export function NavItem({ href, label }: INavItem) {
       }`}
     >
       <span
-        className={`text-gray-800 font-bold text-sm hover:text-navHoverColor transition-colors duration-200 dark:text-white
+        className={`text-gray-800 font-bold text-sm hover:text-navHoverColor transition-colors duration-200 
         dark:hover:text-emerald-700
-        ${label === 'Loja' ? 'text-navHoverColor dark:text-emerald-700' : ''}`}
+        ${
+          label === 'Loja'
+            ? 'text-navHoverColor dark:text-emerald-700'
+            : 'dark:text-white'
+        }`}
       >
         {label}
       </span>
