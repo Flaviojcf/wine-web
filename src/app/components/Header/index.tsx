@@ -24,57 +24,69 @@ export function Header() {
     setTheme(theme === 'dark' ? 'light' : 'dark')
   }
   return (
-    <header className="flex h-20 bg-white border-b-2 border-gray-400 md:px-4 px-6 dark:bg-gray-800  dark:border-gray-700">
-      <div className="container flex items-center justify-between">
-        <div className="flex items-center gap-6">
-          <Menu />
-          <Link href="/">
-            <Image
-              alt="Wine logo"
-              src="/images/header/wineLogo.svg"
-              width={101}
-              height={31}
-            />
-          </Link>
-        </div>
-
-        <nav className="flex items-center justify-between w-[479px] lg:hidden">
-          {NavItensLinks.map((item) => (
-            <NavItem
-              href={item.href}
-              label={item.label}
-              key={`label-${item.label}`}
-            />
-          ))}
-        </nav>
-
-        <nav className="flex items-center justify-between w-32 sm:justify-end sm:gap-4 sm:w-28 sm:hidden">
-          {NavImages.map((item) => (
-            <Image
-              key={`image-${item.alt}`}
-              alt={item.alt}
-              src={item.src}
-              width={item.width}
-              height={item.height}
-              className={`cursor-pointer`}
-            />
-          ))}
-        </nav>
-        <div onClick={handleThemeSwitch}>
-          <CiDark
-            size={40}
-            className={`cursor-pointer ${
-              theme === 'dark' ? 'hidden' : 'flex'
-            } fill-black`}
-          />
-          <MdDarkMode
-            size={40}
-            className={`cursor-pointer ${
-              theme === 'dark' ? 'flex' : 'hidden'
-            } fill-emerald-700`}
-          />
-        </div>
+    <>
+      <div className="flex h-12 bg-black py-1 w-full justify-center">
+        <Image
+          alt="Gif"
+          src="https://img.wine.com.br/martech/2023/topo-site/22-09-23-frete-gratis-m.gif?v=4"
+          width={0}
+          height={0}
+          className="object-contain"
+          style={{ width: '100%', height: '40px' }}
+        />
       </div>
-    </header>
+      <header className="flex h-20 bg-white border-b-2 border-gray-400 md:px-4 px-6 dark:bg-gray-800  dark:border-gray-700">
+        <div className="container flex items-center justify-between">
+          <div className="flex items-center gap-6">
+            <Menu />
+            <Link href="/">
+              <Image
+                alt="Wine logo"
+                src="/images/header/wineLogo.svg"
+                width={101}
+                height={31}
+              />
+            </Link>
+          </div>
+
+          <nav className="flex items-center justify-between w-[479px] lg:hidden">
+            {NavItensLinks.map((item) => (
+              <NavItem
+                href={item.href}
+                label={item.label}
+                key={`label-${item.label}`}
+              />
+            ))}
+          </nav>
+
+          <nav className="flex items-center justify-between w-32 sm:justify-end sm:gap-4 sm:w-28 sm:hidden">
+            {NavImages.map((item) => (
+              <Image
+                key={`image-${item.alt}`}
+                alt={item.alt}
+                src={item.src}
+                width={item.width}
+                height={item.height}
+                className={`cursor-pointer`}
+              />
+            ))}
+          </nav>
+          <div onClick={handleThemeSwitch}>
+            <CiDark
+              size={40}
+              className={`cursor-pointer ${
+                theme === 'dark' ? 'hidden' : 'flex'
+              } fill-black`}
+            />
+            <MdDarkMode
+              size={40}
+              className={`cursor-pointer ${
+                theme === 'dark' ? 'flex' : 'hidden'
+              } fill-emerald-700`}
+            />
+          </div>
+        </div>
+      </header>
+    </>
   )
 }
