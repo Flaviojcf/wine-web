@@ -7,7 +7,7 @@ export function NavItem({ href, label }: INavItem) {
       href={href}
       className={`flex items-center h-[78px] group ${
         label === 'Loja'
-          ? 'border-b-2 border-b-navBorderBottom sm:border-none dark:border-b-emerald-700'
+          ? 'border-b-2 border-b-navBorderBottom lg:border-none dark:border-b-emerald-700'
           : ''
       }`}
     >

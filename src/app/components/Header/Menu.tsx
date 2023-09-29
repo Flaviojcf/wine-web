@@ -12,7 +12,7 @@ export function Menu() {
 
   return (
     <DropdownMenu.Root open={isOpen} onOpenChange={setOpen}>
-      <DropdownMenu.Trigger className="hidden sm:flex">
+      <DropdownMenu.Trigger className="hidden lg:flex">
         <div>
           <Image
             src="/images/header/menuWine.svg"

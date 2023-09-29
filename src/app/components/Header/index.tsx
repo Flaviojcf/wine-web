@@ -59,7 +59,7 @@ export function Header() {
             ))}
           </nav>
 
-          <nav className="flex items-center justify-between w-32 sm:justify-end sm:gap-4 sm:w-28 sm:hidden">
+          <nav className="flex items-center justify-between w-32 sm:justify-end sm:gap-4 sm:w-28 lg:hidden">
             {NavImages.map((item) => (
               <Image
                 key={`image-${item.alt}`}
