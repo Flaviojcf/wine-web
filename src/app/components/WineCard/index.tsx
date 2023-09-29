@@ -56,7 +56,7 @@ export function WineCard({
               <p className="flex font-bold text-xs text-black h-7 items-center mt-1 dark:text-gray-300">
                 SÓCIO WINE
               </p>
-              <span className="flex font-bold text-xl text-pricePartner gap-1 dark:text-emerald-300">
+              <span className="flex font-bold text-xl text-pricePartner gap-1 dark:text-emerald-700">
                 {FormattedMoney(partnerOffer)}
               </span>
             </div>
