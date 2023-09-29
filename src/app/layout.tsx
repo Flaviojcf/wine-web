@@ -7,7 +7,7 @@ import { BacktoTopButton } from './components/BacktoTopButton'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Wine Web',
+  title: 'Wine',
   description: 'Web application for wine.com.br',
   icons: [
     {
