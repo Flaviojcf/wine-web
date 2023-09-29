@@ -49,8 +49,8 @@ export function Menu() {
                 className="w-6 h-6 relative cursor-pointer -mt-8 ml-auto"
                 onClick={() => setOpen(false)}
               >
-                <div className="w-full h-0.5 bg-black absolute top-1/2 transform -translate-y-1/2 rotate-45"></div>
-                <div className="w-full h-0.5 bg-black absolute top-1/2 transform -translate-y-1/2 -rotate-45"></div>
+                <div className="w-full h-0.5 bg-black absolute top-1/2 transform -translate-y-1/2 rotate-45 dark:bg-emerald-700"></div>
+                <div className="w-full h-0.5 bg-black absolute top-1/2 transform -translate-y-1/2 -rotate-45 dark:bg-emerald-700"></div>
               </div>
               {NavItensLinks.map((item) => (
                 <li key={`label-${item.label}`}>
