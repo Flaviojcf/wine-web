@@ -1,14 +1,11 @@
 'use client'
 
 import { ChangeEvent, useState } from 'react'
-import { Button } from '../Button'
+import { Button } from '@/app/components/Button'
+import { IFilter } from '@/app/interfaces/IFilter'
 
-interface IFitler {
-  handleFilterWine: (value: string) => void
-}
-
-export function Filter({ handleFilterWine }: IFitler) {
-  const [selectedOption, setSelectedOption] = useState('')
+export function Filter({ handleFilterWine }: IFilter) {
+  const [selectedOption, setSelectedOption] = useState<string>('')
 
   const handleOptionChange = (
     value: string,

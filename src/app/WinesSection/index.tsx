@@ -1,7 +1,7 @@
 'use client'
 import { WinesData } from '@/utils/mock/wines/wines'
-import { Filter } from '../components/Filter'
-import { WineCard } from '../components/WineCard'
+import { Filter } from '@/app/components/Filter'
+import { WineCard } from '@/app/components/WineCard'
 import { useState } from 'react'
 
 interface RangeValue {

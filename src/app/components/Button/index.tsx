@@ -1,11 +1,6 @@
-import { ButtonHTMLAttributes } from 'react'
+import { IButton } from '@/app/interfaces/IButton'
 
-interface IButton {
-  label: string
-}
-type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement>
-
-export function Button({ children, className, ...props }: ButtonProps) {
+export function Button({ children, className, ...props }: IButton) {
   return (
     <button
       {...props}

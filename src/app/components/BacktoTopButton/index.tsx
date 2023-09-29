@@ -1,6 +1,6 @@
 'use client'
 import { TbArrowNarrowUp } from 'react-icons/tb'
-import { Button } from '../Button'
+import { Button } from '@/app/components/Button'
 import { useEffect, useCallback, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 

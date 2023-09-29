@@ -1,20 +1,19 @@
 import Image from 'next/image'
-import { Button } from '../Button'
+import { Button } from '@/app/components/Button'
 import Link from 'next/link'
-import { FormattedMoney } from '@/utils/formattedMoney'
+import { FormattedMoney } from '@/utils/helpers/formattedMoney'
+import { IWineCard } from '@/app/interfaces/IWineCard'
 
-export interface IWine {
-  image: string
-  name: string
-  price: number
-  offer: number
-  partnerOffer: number
-}
-
-export function WineCard({ image, name, offer, partnerOffer, price }: IWine) {
+export function WineCard({
+  image,
+  name,
+  offer,
+  partnerOffer,
+  price,
+}: IWineCard) {
   return (
     <div>
-      <div className="flex flex-col w-64 h-96 px-1 text-center justify-center bg-white drop-shadow mb-4">
+      <div className="flex flex-col w-64 h-96 px-1 text-center justify-center bg-white  mb-4">
         <div className="flex justify-center">
           <Link href="/wine/syrah">
             <Image
