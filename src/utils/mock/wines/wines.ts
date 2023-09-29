@@ -1,6 +1,6 @@
-import { IWine } from '@/app/components/WineCard'
+import { IWineCard } from '@/app/interfaces/IWineCard'
 
-export const WinesData: IWine[] = [
+export const WinesData: IWineCard[] = [
   {
     image: '/images/wines/wineImage.png',
     name: 'Bacalhôa Meia Pipa Private Selection Castelão Syrah 2015',
